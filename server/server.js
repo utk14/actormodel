@@ -16,7 +16,6 @@ app.use(morgan('dev'));
 app.use(passport.initialize());
 app.use(passport.session());
 
-//app.use( express.static(path.join( __dirname , '../client')));
 app.use( express.static(path.join(__dirname + "/client/build")))
 
 const server = app.listen(port, () => {
